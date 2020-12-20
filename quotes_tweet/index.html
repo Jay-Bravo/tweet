@@ -44,7 +44,7 @@
             window.open(tweetPost)
         };
         const getNewQuotes = () => {
-            let rnum = Math.floor(Math.random() * 101);
+            let rnum = Math.floor(Math.random()*Math.floor(realData.length));
             quotesData = realData[rnum]
             quotes.innerText = `${quotesData.text}`;
             quotesData.author == null   
